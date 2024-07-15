@@ -1,19 +1,22 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
         <title></title>
+        <link rel="stylesheet" href="{% static 'ApexTracker/style.css' %}">
     </head>
     <body>
-        <div>
+        <div class="stuff-box white">
             <ol>
                 <li><a href="{% url 'ApexTracker:index' %}">Home Page</a></li>
-                <li><a href="{% url 'ApexTracker:input' %}">Input</a></li>
-                <li><a href="{% url 'ApexTracker:report' %}">Report</a></li>
+                <li><a href="{% url 'ApexTracker:input' %}">Daily Input</a></li>
+                <li><a href="{% url 'ApexTracker:report' %}">Generate Report</a></li>
                 <li><a href="{% url 'ApexTracker:settings' %}">Settings</a></li>
             </ol>
         </div>
-        <div>
+        <div class="stuff-box red">
             <h1>UNDER CONSTRUCTION</h1>
             <h2>This page is currently being built</h2>
             <h2>This is the Index page.</h2>
