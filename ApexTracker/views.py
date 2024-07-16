@@ -1,12 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Student, Course
 
+# Create your views here.
 def index(request):
     return render(request, 'ApexTracker/index.html')
 
 def input(request):
-    return render(request, 'ApexTracker/input.html')
+    students = Student.objects.prefetch_related('courses').all()
+    return render(request, 'ApexTracker/input.html',
+                  {"students": students})
 
 def report(request):
     return render(request, 'ApexTracker/report.html')

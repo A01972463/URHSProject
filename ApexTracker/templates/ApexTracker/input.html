@@ -22,5 +22,19 @@
                 <li><a href="{% url 'ApexTracker:settings' %}">Settings</a></li>
             </ol>
         </div>
+        <div class="stuff-box blue">
+            <ul>
+                {% for student in students %}
+                    <li>{{ student.name }}
+                        <ul>
+                            {% for course in student.courses.all %}
+                                <li>{{ course.course_name }} - Completion: {{ course.completion }}%</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+        </div>
     </body>
 </html>
