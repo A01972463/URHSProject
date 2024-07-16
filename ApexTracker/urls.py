@@ -7,5 +7,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('input/', views.input, name='input'),
     path('report/', views.report, name='report'),
-    path('settings/', views.settings, name='settings')
+    path('settings/', views.settings, name='settings'),
+    path('settings/newstudent', views.new_student, name='new'),
+    path('settings/editstudent', views.edit_student, name='edit'),
+    # path('settings/quickdisplay', views.quick, name='quick'),
 ]

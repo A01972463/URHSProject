@@ -16,3 +16,9 @@ def report(request):
 
 def settings(request):
     return render(request, 'ApexTracker/settings.html')
+
+def new_student(request):
+    return render(request, 'ApexTracker/set_new.html')
+
+def edit_student(request):
+    return render(request, 'ApexTracker/set_edit.html')
