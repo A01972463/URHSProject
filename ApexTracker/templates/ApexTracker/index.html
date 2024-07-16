@@ -6,6 +6,7 @@
         <meta charset='utf-8'>
         <title></title>
         <link rel="stylesheet" href="{% static 'ApexTracker/style.css' %}">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     </head>
     <body>
         <div class="stuff-box red">
@@ -24,5 +25,18 @@
         <div class="stuff-box black">
             <input type="text" placeholder="Search...">
         </div>
+        <div id="app">
+            <p>{{ message }}</p>
+            <input v-model="message" placeholder="Edit me">
+        </div>
+
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello, Vue.js!'
+                }
+            });
+        </script>
     </body>
 </html>
