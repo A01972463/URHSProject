@@ -4,15 +4,15 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <title></title>
+        <title>Title</title>
         <link rel="stylesheet" href="{% static 'ApexTracker/style.css' %}">
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     </head>
     <body>
         <div class="stuff-box red">
             <h1>UNDER CONSTRUCTION</h1>
             <h2>This page is currently being built</h2>
-            <h2>This is the Home page.</h2>
+            <h2>This is the Delete Student page.</h2>
+            <h3><a href="{% url 'ApexTracker:index' %}">Home Page</a></h3>
         </div>
         <div class="stuff-box white nav">
             <ol>
@@ -22,18 +22,5 @@
                 <li><a href="{% url 'ApexTracker:settings' %}">Settings</a></li>
             </ol>
         </div>
-        <div id="app" class="stuff-box black">
-            <!-- <p>{{ message }}</p> -->
-            <input v-model="message" placeholder="Search...">
-        </div>
-
-        <script>
-            new Vue({
-                el: '#app',
-                data: {
-                    message: ''
-                }
-            });
-        </script>
     </body>
 </html>
