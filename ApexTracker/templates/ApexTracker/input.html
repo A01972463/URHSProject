@@ -26,14 +26,16 @@
         <div class="stuff-box blue">
             <ul>
                 {% for student in students %}
+                <div class="stuff-box black">
                     <li>{{ student.name }}
                         <ul>
                             {% for course in student.courses.all %}
-                                <li>{{ course.course_name }} - Completion: {{ course.completion }}%</li>
+                            <li>{{ course.course_name }} - Completion: {{ course.completion }}% <input type="number"></li>
                             {% endfor %}
                         </ul>
                     </li>
-                {% endfor %}
+                </div>
+                    {% endfor %}
             </ul>
         </div>
         <div id="app">
