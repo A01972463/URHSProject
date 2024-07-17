@@ -2,6 +2,8 @@ import os
 import django
 from django.contrib.auth import get_user_model
 
+// Todo: Take command arguments
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'URHSProject.settings')
 django.setup()
 
