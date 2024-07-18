@@ -6,6 +6,7 @@
         <meta charset='utf-8'>
         <title>Title</title>
         <link rel="stylesheet" href="{% static 'ApexTracker/style.css' %}">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     </head>
     <body>
         <div class="stuff-box red">
@@ -22,5 +23,17 @@
                 <li><a href="{% url 'ApexTracker:settings' %}">Settings</a></li>
             </ol>
         </div>
+        <div id="app" class="stuff-box green">
+            <input v-model="message" placeholder="Search...">
+        </div>
+    
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    message: ''
+                }
+            });
+        </script>
     </body>
 </html>
