@@ -25,14 +25,19 @@
         <div class="stuff-box green">
             <ul>
                 <li>Student Name<input type="text"></li>
-                <li>Graduation Year<input type="text"></li>
-                <li>First Deadline<input type="text"></li>
-                <ul>Course List:
+                <li>Graduation Year<input type="number" placeholder="2025" min="2025" max="2029"></li>
+                <li>First Deadline<input type="date"></li>
+                <li>Course List:</li>
+                <ul>
                     <li>Course<input type="text"></li>
                     <li>Current completion<input type="text"></li>
-                    <li>Semester Length<input type="text"></li>
-                    <li>Semester<input type="text"></li>
-                </ul>
+                    <li>Semester Length
+                        <input type="radio" id="half" name="full_req" value="False">:50%
+                        <input type="radio" id="full" name="full_req" value="True">:100%</li>
+                    <li>Semester
+                        <input type="radio" id="1" name="semester" value="1">:1
+                        <input type="radio" id="2" name="semester" value="2">:2</li>
+            </ul>
             </ul>
             <button type="button">Save</button>
         </div>
