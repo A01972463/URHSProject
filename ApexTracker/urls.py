@@ -10,5 +10,5 @@ urlpatterns = [
     path('settings/', views.settings, name='settings'),
     path('settings/newstudent', views.new_student, name='new'),
     path('settings/editstudent', views.edit_student, name='edit'),
-    # path('settings/quickdisplay', views.quick, name='quick'),
+    path('settings/quickdisplay', views.quick_settings, name='quick'),
 ]

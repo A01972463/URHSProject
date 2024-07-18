@@ -4,14 +4,14 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <title></title>
+        <title>Title</title>
         <link rel="stylesheet" href="{% static 'ApexTracker/style.css' %}">
     </head>
     <body>
         <div class="stuff-box red">
             <h1>UNDER CONSTRUCTION</h1>
             <h2>This page is currently being built</h2>
-            <h2>This is the Settings page.</h2>
+            <h2>This is the Quick Display Setting's page.</h2>
             <h3><a href="{% url 'ApexTracker:index' %}">Home Page</a></h3>
         </div>
         <div class="stuff-box white nav">
@@ -20,14 +20,6 @@
                 <li><a href="{% url 'ApexTracker:input' %}">Daily Input</a></li>
                 <li><a href="{% url 'ApexTracker:report' %}">Generate Report</a></li>
                 <li><a href="{% url 'ApexTracker:settings' %}">Settings</a></li>
-            </ol>
-        </div>
-        <div class="stuff-box black">
-            <ol>
-                <li><a href="{% url 'ApexTracker:new' %}">Add New Student</a></li>
-                <li><a href="{% url 'ApexTracker:edit' %}">Edit Existing Student</a></li>
-                <li><a href="{% url 'ApexTracker:quick' %}">Display Settings</a></li>
-                <li>Toggle Summer School<input type="checkbox"></li>
             </ol>
         </div>
     </body>

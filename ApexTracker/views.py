@@ -22,3 +22,6 @@ def new_student(request):
 
 def edit_student(request):
     return render(request, 'ApexTracker/set_edit.html')
+
+def quick_settings(request):
+    return render(request, 'ApexTracker/set_quick_dis.html')
