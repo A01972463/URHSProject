@@ -30,7 +30,7 @@
                     <li>{{ student.name }}
                         <ul>
                             {% for course in student.courses.all %}
-                            <li>{{ course.course_name }} - Completion: <input type="number"></li>
+                            <li>{{ course.course_name }} - <input type="number" min="0" max="100"></li>
                             {% endfor %}
                         </ul>
                     </li>
