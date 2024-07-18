@@ -30,13 +30,14 @@
                     <li>{{ student.name }}
                         <ul>
                             {% for course in student.courses.all %}
-                            <li>{{ course.course_name }} - Completion: {{ course.completion }}% <input type="number"></li>
+                            <li>{{ course.course_name }} - Completion: <input type="number"></li>
                             {% endfor %}
                         </ul>
                     </li>
                 </div>
                     {% endfor %}
             </ul>
+            <button type="button">Save Changes</button>
         </div>
         <div id="app">
             <p>{{ message }}</p>
